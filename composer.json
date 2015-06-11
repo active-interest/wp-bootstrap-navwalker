@@ -1,0 +1,17 @@
+{
+    "name": "active-interest/wp-bootstrap-navwalker",
+    "description": "Bootstrap Nav Walker for WordPress",
+    "type": "library",
+    "license": "GPL v2",
+    "authors": [
+        {
+          "name": "Edward McIntyre",
+          "email": "edward@edwardmcintyre.com",
+          "url": "https://github.com/twittem"
+        },
+        {
+            "name": "David Higgins",
+            "email": "dhiggins@aimmedia.com"
+        }
+    ]
+}
