@@ -59,8 +59,10 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 			$classes[] = 'menu-item-' . $item->ID;
-			if( $item->title === 'Search' && (($index = array_search('current-menu-item', $classes)) !== false) ) {
-				unset($classes[$index]);
+			if( $item->title === 'Search' ) {
+				if(($index = array_search('current-menu-item', $classes)) !== false) {
+					unset($classes[$index]);
+				}
 				$classes[] = 'menu-item-search';
 			}
 
